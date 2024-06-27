@@ -21,7 +21,7 @@ timeout(time: 60, unit: 'SECONDS') {
 
         stage('Archive') {
             sh "pwd"
-            archiveArtifacts "build/libs/${RELEASENAME}"
+            archiveArtifacts "build/libs/webapp-1.0.war"
         }    
     }
 }
