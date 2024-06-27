@@ -20,6 +20,7 @@ timeout(time: 60, unit: 'SECONDS') {
         }
 
         stage('Archive') {
+            pwd
             archiveArtifacts "build/libs/${RELEASENAME}"
         }    
     }
